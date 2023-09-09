@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-if [[ -d 'vendor' ]]; then 
-    python -m venv vendor;
+if [[ -d 'venv' ]]; then 
+    python -m venv venv;
 fi
 
-source vendor/bin/activate;
+source venv/bin/activate;
 pip install -r requirements.txt;
 deactivate;
